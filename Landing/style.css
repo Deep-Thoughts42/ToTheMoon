@@ -9,7 +9,7 @@ html {
   }
 
 body{
-    height: 100vh;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(180deg, #133261 0%, #090909 100%);
 }
@@ -24,7 +24,7 @@ button{
 }
 header{
     display: flex;
-    width: 90%;
+    width: 80%;
     height: 10vh;
     margin: auto;
     align-items: center;
@@ -35,7 +35,7 @@ header{
 }
 
 .logo-container{
-    flex: 4;
+    flex: 3;
 }
 .logo{
     color: #111111;
@@ -100,3 +100,91 @@ nav{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.present{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.introduction{
+    display: flex;
+}
+
+.intro-text{
+    text-align: left;
+    width: 40%;
+    margin-top: 80px;
+}
+
+.mainHeader{
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 76px;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.sub{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 22px;
+
+    align-items: center;
+    background: -webkit-linear-gradient(180deg, #DDB011 0%, #F7EF8A 35.94%, #D2AC47 71.88%, #EDC967 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subHeader{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.intro-img {
+    display: flex;
+}
+
+.mainimg{
+    margin-left: 370px;
+}
+
+
+canvas{
+    display: block;
+}
+
+  
+  .progress-bar {
+	position: relative;
+	width: 500px;
+	height: 3em;
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	color: white;
+}
+
+.progress-bar::before {
+	content: attr(data-label);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	bottom: .5em;
+	width: calc(var(--width, 0) * 1%);
+	min-width: 2rem;
+	max-width: calc(100% - 3em);
+       background: linear-gradient(90deg, #DDB011 0%, #F7EF8A 35.94%, #D2AC47 71.88%, #EDC967 100%);	border-radius: 1em;
+	padding: 1em;
+}
+
+  
