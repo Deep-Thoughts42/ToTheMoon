@@ -21,6 +21,7 @@
 
 let sun;
 let cam;
+let angle = 0;
 
 let sunTexture;
 const textures = [];
@@ -41,8 +42,6 @@ function setup() {
   // Disable the context menu on the canvas so the camera can use the right mouse button
   canvas.elt.oncontextmenu = () => false;
 
-  cam = createEasyCam({ distance: 300 });
-
   sun = new Planet(50, 0, 0, sunTexture);
   sun.spawnMoons(0, 0);
 }
@@ -51,6 +50,8 @@ function draw() {
   background(0);
   ambientLight(255, 255, 255);
   pointLight(255, 255, 255, 0, 0, 0);
+  rotateY(angle);
   sun.show();
+  angle += 0.035;
   sun.orbit();
 }

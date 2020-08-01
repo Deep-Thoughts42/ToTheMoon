@@ -225,4 +225,5 @@ canvas{
 
 #sketch-holder{
     height: 100%;
+    overflow: hidden;
 }
