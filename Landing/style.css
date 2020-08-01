@@ -9,7 +9,7 @@ html {
   }
 
 body{
-    height: 260vh;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(180deg, #133261 0%, #090909 100%);
 }
@@ -159,9 +159,8 @@ nav{
 
 
 canvas{
-    position: absolute;
     display: block;
-    z-index: 10;
+    padding: 30px;
 }
 
   
@@ -208,45 +207,6 @@ canvas{
 }
 
 
-  .sim{
-      display: flex;
-      text-align: center;
-      width: 80%;
-      margin-left: 200px;
-  }
-
-  .buttonsleft{
-    list-style: none;
-    text-decoration: none;
-  }
-
-  .leftbtn{
-    list-style: none;
-    text-decoration: none;
-      width: 100%;
-      padding: 13px;
-      padding-left: 30px;
-      padding-right: 30px;
-      border-radius: 50px;
-      border: none;
+#sketch-holder{
+    height: 100%;
 }
-
-
-.buttonsright{
-    list-style: none;
-    text-decoration: none;
-  }
-
-  .rightbtn{
-      margin-left: 600px;
-    list-style: none;
-    text-decoration: none;
-    width: 22%;
-    padding: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 50px;
-    border: none;
-}
-
-button:focus {outline:0;}
