@@ -16,7 +16,7 @@ setInterval(() => {
 
 
 https://www.w3schools.com/js/js_object_classes.asp
-
+// Test
 
 
 // https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript
@@ -336,7 +336,7 @@ class PlanetEdit {
     
   }
 
-  updateHabScore() {
+  updatePopScore() {
     var water_weights = {
       0 : 0,
       1 : 0.2,
@@ -376,15 +376,68 @@ class PlanetEdit {
       1 : 0.2,
       2 : 0.4,
       3 : 0.6, 
-      4 : 0.7,
-      5 : 0.8,
+      4 : 0.8,
+      5 : 1,
 
       
     };
     
-    return ;
+    var calculation = ((water_weights[this.water]*15)+(flora_weights[this.flora]*20)+(albedo_weights[this.albedo]*5)+(oxygen_weights[this.oxygen]*10)*1000000000);
+
+    return calculation;
 
   }
+
+  updateHabScore() {
+    var water_weights = {
+      0 : 0,
+      1 : 0.25,
+      2 : 0.5,
+      3 : 0.76, 
+      4 : 1,
+      5 : 1,
+      6 : 0.75,
+      7 : 0.6,
+      8 : 0.45,
+      9 : 0.25,
+      10 : 0 
+
+    };
+    var flora_weights = {
+      0 : 0,
+      1 : 0.25,
+      2 : 0.5,
+      3 : 0.65, 
+      4 : 0.75,
+      5 : 1,
+      6 : 1
+
+    };
+    var albedo_weights = {
+      0 : 0,
+      1 : 0.45,
+      2 : 1,
+      3 : 1, 
+      4 : 0.45,
+      5 : 0
+
+      
+    };
+    var oxygen_weights = {
+      0 : 0,
+      1 : 0.25,
+      2 : 0.5,
+      3 : 0.75, 
+      4 : 1,
+      5 : 1,
+
+      
+    };
+
+    var calculation = (water_weights[this.water]*30)+(flora_weights[this.flora]*40)+(albedo_weights[this.albedo]*10)+(oxygen_weights[this.oxygen]*20);
+    return calculation;
+  }
+
 
 }
 
