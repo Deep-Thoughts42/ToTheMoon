@@ -103,9 +103,9 @@ nav{
 
 .present{
     display: flex;
-    width: 80%;
+    max-width: 1200px;
     margin: auto;
-    min-height: 80vh;
+    height: 500px;
     text-align: center;
     margin-top: 70px;
 }
@@ -116,7 +116,7 @@ nav{
 
 .intro-text{
     text-align: left;
-    width: 40%;
+    width: 60%;
     margin-top: 80px;
 }
 
@@ -150,11 +150,27 @@ nav{
 }
 
 .intro-img {
-    display: flex;
+    align-self: center;
+    width: 40%;
+    text-align: right;
+}
+.mainimg {
+    text-align: right;
+    align-items: center;
+    align-self: center;
 }
 
-.mainimg{
-    margin-left: 370px;
+.sim{
+    display: flex;
+    text-align: center;
+    max-width: 1200px;
+
+
+
+
+    margin: 0 auto;
+    padding: 0 40px;
+    /*margin-left: 200px;*/
 }
 
 
