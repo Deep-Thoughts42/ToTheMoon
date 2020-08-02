@@ -1,3 +1,4 @@
+
 // Solar System in Processing - Part 3 (3D textures)
 // The Coding Train / Daniel Shiffman
 // https://thecodingtrain.com/CodingChallenges/009-solarsystemgenerator3d-texture.html
@@ -15,10 +16,14 @@ class Planet {
       this.orbitspeed = o;
   
       this.planets = null;
-  
-      // Since there is no direct equivalent of PShape in p5.js, we have
-      // to save the texture for later use instead of creating a globe.
+		
       this.texture = img;
+		
+		this.water = 0;
+		this.flora = 0;
+		this.albedo = 0;
+		this.oxygen = 0;
+		
     }
   
     orbit() {
@@ -45,6 +50,7 @@ class Planet {
       }
     }
   
+	
     show() {
       push();
       noStroke();
