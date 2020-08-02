@@ -232,7 +232,7 @@ canvas{
 	left: .2em;
 	top: .2em;
 	bottom: .2em;
-	width: calc(var(--width, 0) * 1%);
+	width: width * 1%;
 	min-width: 2rem;
 	max-width: calc(100% - 0.4em);
        background: linear-gradient(90deg, #DDB011 0%, #F7EF8A 35.94%, #D2AC47 71.88%, #EDC967 100%);
@@ -332,4 +332,3 @@ canvas{
     margin-left: 300px;
 
 }
-
