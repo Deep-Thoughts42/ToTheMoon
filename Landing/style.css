@@ -15,12 +15,14 @@ body{
 }
 
 button{
-    font-family: 'DM Sans', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 .header-back{
     width: 100%;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
 }
 header{
     display: flex;
@@ -38,6 +40,14 @@ header{
     height: 50px;
     width: 50px
 
+}
+
+.colexo-text {
+    margin-left: 1rem;
+    align-items: center;
+    align-self: center;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .logo-container{
@@ -232,4 +242,36 @@ canvas{
 #sketch-holder{
     height: 100%;
     overflow: hidden;
+}
+
+
+.button-holder {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button-holder a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    margin-bottom: 1rem;
+    
+    padding: 0.55rem 3.0rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    justify-items: center;
+
+
+}
+
+.increase {
+    background-color: #3b3b3b;
+}
+
+.decrease {
+    background-color: #3b3b3b;
 }

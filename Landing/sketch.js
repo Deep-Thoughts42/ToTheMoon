@@ -42,12 +42,12 @@ function setup() {
   // Disable the context menu on the canvas so the camera can use the right mouse button
   canvas.elt.oncontextmenu = () => false;
 
-  sun = new Planet(50, 0, 0, sunTexture);
+  sun = new Planet(150, 0, 0, sunTexture);
   sun.spawnMoons(0, 0);
 }
 
 function draw() {
-  background(0);
+  background('transparent');
   ambientLight(255, 255, 255);
   pointLight(255, 255, 255, 0, 0, 0);
   rotateY(angle);
