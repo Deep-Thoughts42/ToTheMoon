@@ -1,8 +1,15 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+} */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -205,13 +212,11 @@ nav{
 canvas{
     display: block;
     padding: 30px;
-    background: transparent;
 }
-
   
-  .progress-bar {
+.progress-bar {
 	position: relative;
-	width: 70%;
+	width: 800px;
 	height: 2em;
 	background-color: #ffffff;
 	border-radius: 1.5em;
@@ -231,12 +236,13 @@ canvas{
 	width: calc(var(--width, 0) * 1%);
 	min-width: 2rem;
 	max-width: calc(100% - 0.4em);
-       background: linear-gradient(90deg, #DDB011 0%, #F7EF8A 35.94%, #D2AC47 71.88%, #EDC967 100%);	border-radius: 1em;
+       background: linear-gradient(90deg, #DDB011 0%, #F7EF8A 35.94%, #D2AC47 71.88%, #EDC967 100%);
+    border-radius: 1em;
 }
 
 
 .progress{
-    width: 80%;
+    width: 1200px;
     margin: auto;
     text-align: center;
     margin-top: 35px;
