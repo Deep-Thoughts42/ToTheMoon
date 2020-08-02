@@ -148,7 +148,8 @@ nav{
 .sub{
     font-weight: 500;
     font-size: 30px;
-    line-height: 22px;
+    line-height: 37px;
+    
 
     align-items: center;
     background: -webkit-linear-gradient(180deg, #DDB011 0%, #F7EF8A 35.94%, #D2AC47 71.88%, #EDC967 100%);
@@ -274,4 +275,30 @@ canvas{
 
 .decrease {
     background-color: #3b3b3b;
+}
+
+.bottom-display {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    justify-self: center;
+
+}
+
+.population-display {
+    margin-bottom: 1.5rem;
+    padding: 0.55rem 3.0rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-size: 1.5rem;
+
+}
+
+.activity-log {
+    padding: 0.55rem 3.0rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-size: 1.5rem;
 }
