@@ -1,10 +1,3 @@
-const progressBar = document.getElementsByClassName('progress-bar')[0]
-setInterval(() => {
-  const computedStyle = getComputedStyle(progressBar)
-  const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
-  progressBar.style.setProperty('--width', width + .1)
-}, 5)
-
 
 // First we need to create a planet object that has variables initialized in it
 // Then we need "step" functions depending on the button pressed 
@@ -15,7 +8,7 @@ setInterval(() => {
 
 
 
-https://www.w3schools.com/js/js_object_classes.asp
+// https://www.w3schools.com/js/js_object_classes.asp
 // Test
 
 
