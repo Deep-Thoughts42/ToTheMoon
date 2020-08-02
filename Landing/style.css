@@ -34,12 +34,18 @@ header{
     display: flex;
 }
 
+.logo-image {
+    height: 50px;
+    width: 50px
+
+}
+
 .logo-container{
     flex: 3;
 }
 .logo{
     color: #111111;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 400;
     margin: 5px;
     cursor: pointer;
