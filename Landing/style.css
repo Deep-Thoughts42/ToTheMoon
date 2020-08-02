@@ -180,6 +180,7 @@ nav{
 .sim{
     display: flex;
     text-align: center;
+    flex-direction: column;
     max-width: 1200px;
 
 
@@ -188,6 +189,15 @@ nav{
     margin: 0 auto;
     /* padding: 0 40px; */
     /*margin-left: 200px;*/
+}
+
+.button-holder {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.buttons-interface {
+    margin-top: 2rem;
 }
 
 
@@ -251,13 +261,14 @@ canvas{
 
 .button-holder {
     display: flex;
-    flex-direction: column;
+    
 
 }
 
 .button-holder a {
     text-decoration: none;
     color: white;
+    
 }
 
 .btn {
@@ -268,6 +279,8 @@ canvas{
     text-decoration: none;
     text-align: center;
     justify-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
 
 }
