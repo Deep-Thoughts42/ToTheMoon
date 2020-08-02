@@ -29,29 +29,29 @@ const textures = [];
 // Because of the asynchronous nature of file loading in JavaScript, we
 // have to load the images in p5.js' preload() instead of in setup().
 function preload() {
-  sunTexture = loadImage('data/sun.jpg');
+  sunTexture = loadImage('data/earth.jpg');
   textures[0] = loadImage('data/mars.jpg');
   textures[1] = loadImage('data/earth.jpg');
   textures[2] = loadImage('data/mercury.jpg');
 }
 
 function setup() {
-  let canvas = createCanvas(500, 500, WEBGL);
+  let canvas = createCanvas(800, 800, WEBGL);
   canvas.parent('sketch-holder');
 
   // Disable the context menu on the canvas so the camera can use the right mouse button
   canvas.elt.oncontextmenu = () => false;
 
-  sun = new Planet(150, 0, 0, sunTexture);
+  sun = new Planet(320, 0, 0, sunTexture);
   sun.spawnMoons(0, 0);
 }
 
 function draw() {
-  background('transparent');
+  background('#323333');
   ambientLight(255, 255, 255);
   pointLight(255, 255, 255, 0, 0, 0);
   rotateY(angle);
   sun.show();
-  angle += 0.035;
+  angle += 0.002;
   sun.orbit();
 }
