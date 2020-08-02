@@ -36,13 +36,13 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(800, 800, WEBGL);
+  let canvas = createCanvas(600, 600, WEBGL);
   canvas.parent('sketch-holder');
 
   // Disable the context menu on the canvas so the camera can use the right mouse button
   canvas.elt.oncontextmenu = () => false;
 
-  sun = new Planet(320, 0, 0, sunTexture);
+  sun = new Planet(250, 0, 0, sunTexture);
   sun.spawnMoons(0, 0);
 }
 

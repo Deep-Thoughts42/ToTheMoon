@@ -175,6 +175,7 @@ nav{
     text-align: right;
     align-items: center;
     align-self: center;
+    height: 420px;
 }
 
 .sim{
@@ -197,13 +198,14 @@ nav{
 }
 
 .buttons-interface {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 
 canvas{
     display: block;
     padding: 30px;
+    background: transparent;
 }
 
   
@@ -279,8 +281,8 @@ canvas{
     text-decoration: none;
     text-align: center;
     justify-items: center;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem; */
 
 
 }
@@ -322,7 +324,7 @@ canvas{
 
 
 .margin-test {
-    margin-left: 200px;
+    margin-left: 300px;
 
 }
 
